@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name</title>
+<title>Lynx Universe</title>
 
 <style>
 * {
@@ -20,37 +20,43 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;   /* 关键：铺满整个屏幕 */
 }
 
 .container {
-    background: rgba(0,0,0,0.4);
-    padding: 60px;
+    background: rgba(0,0,0,0.35);
+    padding: 60px 80px;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 
-p {
-    margin-bottom: 40px;
-    font-size: 18px;
-    opacity: 0.85;
+.nav {
+    margin-bottom: 30px;
 }
 
-a {
-    display: block;
-    margin: 12px 0;
+.nav a {
+    margin: 0 20px;
     font-size: 20px;
     color: white;
     text-decoration: none;
     transition: opacity 0.3s;
 }
 
-a:hover {
+.nav a:hover {
     opacity: 0.6;
+}
+
+p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.85;
 }
 </style>
 </head>
@@ -58,13 +64,18 @@ a:hover {
 <body>
 
 <div class="container">
-    <h1>Your Name</h1>
-    <p>A short introduction about yourself.</p>
+    <h1>Lynx Universe</h1>
 
-    <a href="profile.html">Profile</a>
-    <a href="research.html">Research</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav">
+        <a href="profile.html">Profile</a>
+        <a href="research.html">Research</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <p>
+        Exploring ideas at the intersection of curiosity, research, and creativity.
+    </p>
 </div>
 
 </body>
